@@ -1,0 +1,4 @@
+*.jpg
+training_data/
+.ipynb_checkpoints
+*.pkl
