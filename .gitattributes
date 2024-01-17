@@ -1,0 +1,9 @@
+validation_data/pizza.jpg filter=lfs diff=lfs merge=lfs -text
+validation_data/poptart.jpg filter=lfs diff=lfs merge=lfs -text
+validation_data/pug.jpg filter=lfs diff=lfs merge=lfs -text
+validation_data/salad.jpg filter=lfs diff=lfs merge=lfs -text
+validation_data/sandwich.jpg filter=lfs diff=lfs merge=lfs -text
+validation_data/tree.jpg filter=lfs diff=lfs merge=lfs -text
+validation_data/car.jpg filter=lfs diff=lfs merge=lfs -text
+validation_data/hot[[:space:]]dog.jpg filter=lfs diff=lfs merge=lfs -text
+sandwich.pkl filter=lfs diff=lfs merge=lfs -text
