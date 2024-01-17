@@ -17,10 +17,10 @@ def classify_image(img):
     pred,idx,probs = learn.predict(img)
     return dict(zip(categories, map(float,probs)))
 
-# %% ../sandwich-serve.ipynb 10
+# %% ../sandwich-serve.ipynb 11
 image = gr.inputs.Image(shape=(192,192))
 label = gr.outputs.Label()
-examples = get_image_files("validation_data")
+examples = list(map(str, get_image_files("validation_data")))
 
 intf = gr.Interface(fn=classify_image, inputs=image, outputs=label, examples=examples)
 intf.launch(inline=False)
