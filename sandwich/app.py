@@ -20,7 +20,7 @@ def classify_image(img):
 # %% ../sandwich-serve.ipynb 11
 image = gr.inputs.Image(shape=(192,192))
 label = gr.outputs.Label()
-examples = list(map(str, get_image_files("validation_data")))
+examples = list(map(str, get_image_files("example_data")))
 
 intf = gr.Interface(fn=classify_image, inputs=image, outputs=label, examples=examples)
 intf.launch(inline=False)
